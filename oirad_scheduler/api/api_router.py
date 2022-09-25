@@ -4,11 +4,11 @@ from fastapi import APIRouter, Depends
 from requests import Session
 from sqlalchemy.orm import sessionmaker
 
-from api.dto import NotificationDTO
-from orm.engine import engine, SessionLocal
-from orm.utils import get_session_web
+from oirad_scheduler.api.dto import NotificationDTO
+from oirad_scheduler.orm.engine import engine, SessionLocal
+from oirad_scheduler.orm.utils import get_session_web
 
-from models import Notification
+from oirad_scheduler.models import Notification
 
 api_router = APIRouter()
 

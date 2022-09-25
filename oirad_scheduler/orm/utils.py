@@ -3,7 +3,7 @@ from typing import Iterator
 
 import sqlalchemy
 
-from orm.engine import SessionLocal
+from oirad_scheduler.orm.engine import SessionLocal
 
 
 def get_session_web() -> Iterator[sqlalchemy.orm.Session]:

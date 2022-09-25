@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.asyncio import create_async_engine
 from sqlalchemy.orm import declarative_base, sessionmaker  # type: ignore
 
-from settings import database_settings
+from oirad_scheduler.settings import database_settings
 
 SQLALCHEMY_DATABASE_URI = database_settings.full_url_sync
 SQLALCHEMY_ASYNC_DATABASE_URI = database_settings.full_url_async

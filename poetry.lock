@@ -238,7 +238,7 @@ python-versions = "*"
 
 [[package]]
 name = "psycopg2"
-version = "2.9.1"
+version = "2.9.3"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
 category = "main"
 optional = false
@@ -494,7 +494,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "75ef650a51af6aad5e5e5448329ad1742f10b49d5bd2036dff2472b41467aabe"
+content-hash = "9cd3095d9ccaa8cb9668759ad41c2db120d0ed2bebacb0cdae6364e1262da9ef"
 
 [metadata.files]
 alembic = []

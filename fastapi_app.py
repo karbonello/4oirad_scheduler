@@ -6,9 +6,9 @@ import requests
 import uvicorn
 from fastapi import FastAPI
 
-from api.api_router import api_router
-from models import Notification
-from orm.engine import SessionLocal
+from oirad_scheduler.api.api_router import api_router
+from oirad_scheduler.models import Notification
+from oirad_scheduler.orm.engine import SessionLocal
 
 app = FastAPI()
 app.include_router(api_router)

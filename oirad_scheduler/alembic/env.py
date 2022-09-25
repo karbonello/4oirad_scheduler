@@ -1,7 +1,7 @@
 from logging.config import fileConfig
 
 from alembic import context
-from settings import database_settings
+from oirad_scheduler.settings import database_settings
 from sqlalchemy import create_engine
 
 # this is the Alembic Config object, which provides
@@ -19,11 +19,11 @@ fileConfig(config.config_file_name)
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 
-from orm.base import Base
+from oirad_scheduler.orm.base import Base
 
 target_metadata = Base.metadata
 
-from models import Notification
+from oirad_scheduler.models import Notification
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:

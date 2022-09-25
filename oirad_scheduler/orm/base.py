@@ -2,12 +2,11 @@ from typing import Optional, Iterator
 
 import sqlalchemy
 
-from settings import database_settings
+from oirad_scheduler.settings import database_settings
 from sqlalchemy import MetaData
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import as_declarative, scoped_session, sessionmaker
 
-from orm.engine import SessionLocal
 
 ASYNC_DRIVER_NAME = "postgresql+asyncpg"
 
