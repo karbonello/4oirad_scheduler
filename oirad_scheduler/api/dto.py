@@ -10,3 +10,4 @@ class NotificationDTO(BaseModel):
     access_token: str
     we_template_name: str
     template_vars: str
+    chat_platform: str

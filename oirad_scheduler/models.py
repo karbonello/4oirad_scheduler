@@ -1,6 +1,6 @@
 import datetime
 
-from orm.base import Base
+from oirad_scheduler.orm.base import Base
 from sqlalchemy import Column, DateTime, Integer, String
 
 
@@ -9,6 +9,7 @@ class Notification(Base):
     __tablename__ = "notification"
 
     id = Column(Integer, primary_key=True)
+    chat_platform = Column(String)
     bot_whatsapp_number = Column(String)
     user_wa_number = Column(String)
     access_token = Column(String)

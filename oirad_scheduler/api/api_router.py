@@ -33,6 +33,7 @@ async def set_notification(
             we_template_name=notification_data.we_template_name,
             template_vars=notification_data.template_vars,
             created_at=datetime.datetime.utcnow(),
+            chat_platform=notification_data.chat_platform
         )
         session.add(notification)
         session.commit()

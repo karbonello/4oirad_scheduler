@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "4oirad_scheduler"
+name = "oirad_scheduler"
 version = "0.1.0"
 description = ""
 authors = ["Chingis <chingiskarbushov@live.ru>"]

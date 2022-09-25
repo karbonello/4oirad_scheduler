@@ -1,5 +1,5 @@
 import logging
 
-from settings import settings
+from oirad_scheduler.settings import settings
 
 logging.basicConfig(level=settings.LOG_LEVEL)

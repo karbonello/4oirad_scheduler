@@ -15,6 +15,7 @@ app.include_router(api_router)
 
 utc_tz = dt.timezone.utc
 
+
 def handler():
     while True:
         yesterday = dt.date.today() - dt.timedelta(days=1)
