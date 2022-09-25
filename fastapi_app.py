@@ -3,7 +3,6 @@ import time
 from threading import Thread
 
 import requests
-import schedule
 import uvicorn
 from fastapi import FastAPI
 
