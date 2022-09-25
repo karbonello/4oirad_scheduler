@@ -1,5 +1,6 @@
 import datetime as dt
 import time
+from threading import Thread
 
 import requests
 import schedule
@@ -45,9 +46,6 @@ async def health_check():
     return {"Hello": "World"}
 
 if __name__ == "__main__":
-    schedule = schedule.Scheduler()
-    schedule.cyclic(dt.timedelta(minutes=10), handler)
-
-    schedule.daily(dt.time(hour=16, minute=30), handler)
-
+    thread = Thread(target=handler)
+    thread.start()
     uvicorn.run(app, host="0.0.0.0", port=8000)
